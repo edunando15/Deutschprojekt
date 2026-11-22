@@ -22,3 +22,4 @@ Execute the following commands in PowerShell to configure your database connecti
 .\mvnw.cmd test
 ```
 
+To execute the tests from your IDE, set the same values as environment variables in your IDE's run configuration.
