@@ -24,6 +24,8 @@ Execute the following commands in PowerShell to configure your database connecti
 
 To execute the tests from your IDE, set the same values as environment variables in your IDE's run configuration.
 
+The app automatically generates a random in-memory signing key on startup when `JWT_SECRET` is not set. Registration (`POST /api/v0/users/add`) and login are public, while all other endpoints require a valid token.
+
 ### User Passwords
 
 Passwords should be stored as BCrypt hashes, not reversibly encrypted. This is achieved by injecting `PasswordHasher` where user accounts are created and authenticated:
