@@ -22,6 +22,6 @@ public class StartupRunner implements CommandLineRunner {
     @Override
     public  void run(String @Nullable ... args) throws Exception {
         List<Term> terms = parser.getTerms(new File(ProjectConstants.A2_B1_CSV_FILE_PATH));
-        service.createAll(terms);
+        service.addAll(terms);
     }
 }
