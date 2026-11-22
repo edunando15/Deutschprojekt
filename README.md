@@ -23,3 +23,12 @@ Execute the following commands in PowerShell to configure your database connecti
 ```
 
 To execute the tests from your IDE, set the same values as environment variables in your IDE's run configuration.
+
+### User Passwords
+
+Passwords should be stored as BCrypt hashes, not reversibly encrypted. This is achieved by injecting `PasswordHasher` where user accounts are created and authenticated:
+
+```java
+user.setPassword(passwordHasher.hash(rawPassword));
+boolean authenticated = passwordHasher.matches(rawPassword, user.getPassword());
+```
