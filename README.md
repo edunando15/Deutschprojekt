@@ -1,36 +1,48 @@
 # Deutschprojekt
 
-This application is designed to help users learn German through interactive exercises and quizzes. It provides a simple UI to practice vocabulary. The application may be extended in the future to include more features, such as grammar exercises and progress tracking.
+Deutschprojekt is a German vocabulary practice app with an Angular frontend and a Spring Boot/PostgreSQL API. Users can register, sign in, and take quizzes with 30 randomly selected English prompts. For each prompt, they enter the German article, singular, and plural; the app scores the complete quiz and shows corrections.
 
-## Main Functionality
+## Run locally
 
-The main feature of the application consists of a quiz with multiple questions, where the user has to select the correct article, German name and German plural name of a given English word.
-
-## Architecture
-
-This project is a Java-based application, which uses Spring Boot and PostgreSQL. The application follow the MCV design pattern, where the model represents the data, the view represents the user interface, and the controller handles the logic and user input.
-
-### Set Environment Variables and Run Tests (PowerShell)
-
-Execute the following commands in PowerShell to configure your database connection and run the test suite:
+Start PostgreSQL and configure the backend connection from the repository root in PowerShell:
 
 ```powershell
-\$env:DB_URL = "jdbc:postgresql://localhost:5432/postgres?connectTimeout=10&sslmode=prefer"
-\$env:DB_USERNAME = "postgres"
-\$env:DB_PASSWORD = "<your password>"
-
-.\mvnw.cmd test
+$env:DB_URL = "jdbc:postgresql://localhost:5432/deutschprojekt"
+$env:DB_USERNAME = "deutschprojekt"
+$env:DB_PASSWORD = "<your password>"
+.\mvnw.cmd spring-boot:run
 ```
 
-To execute the tests from your IDE, set the same values as environment variables in your IDE's run configuration.
+The backend runs at `http://localhost:8080` and adds vocabulary CSV entries not already stored in the database. If the frontend uses a different origin, set `FRONTEND_ORIGIN` before starting Spring Boot; the default is `http://localhost:4200`. For stable JWTs between backend restarts, set `JWT_SECRET` to a Base64-encoded key of at least 32 bytes.
 
-The app automatically generates a random in-memory signing key on startup when `JWT_SECRET` is not set. Registration (`POST /api/v0/users/add`) and login are public, while all other endpoints require a valid token.
+In another terminal:
 
-### User Passwords
+```powershell
+Set-Location frontend
+npm.cmd install
+npm.cmd start
+```
 
-Passwords should be stored as BCrypt hashes, not reversibly encrypted. This is achieved by injecting `PasswordHasher` where user accounts are created and authenticated:
+Open `http://localhost:4200`, create an account, and sign in. The Angular app calls the backend at `http://localhost:8080/api/v0`; change `frontend/src/app/core/api-url.ts` if the backend address differs.
 
-```java
-user.setPassword(passwordHasher.hash(rawPassword));
-boolean authenticated = passwordHasher.matches(rawPassword, user.getPassword());
+## API
+
+- `POST /api/v0/users/add` registers a user with `username`, `email`, and `password`.
+- `POST /api/v0/users/login` authenticates a user and returns a bearer token.
+- `GET /api/v0/terms/quiz` returns 30 randomized prompts containing only each term ID and English translation.
+- `POST /api/v0/terms/quiz/submit` accepts 30 answers (`termId`, `article`, `word`, and `plural`) and returns a score with the correct answers. The quiz endpoints require the bearer token returned by login.
+
+## Tests
+
+Run the focused quiz API tests from the repository root:
+
+```powershell
+.\mvnw.cmd "-Dtest=TermsControllerTest,StartupRunnerTest" test
+```
+
+Build the Angular application:
+
+```powershell
+Set-Location frontend
+npm.cmd run build
 ```

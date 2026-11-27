@@ -7,7 +7,10 @@ import org.jspecify.annotations.Nullable;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Component
 public class StartupRunner implements CommandLineRunner {
@@ -21,7 +24,18 @@ public class StartupRunner implements CommandLineRunner {
 
     @Override
     public  void run(String @Nullable ... args) throws Exception {
-        List<Term> terms = parser.getTerms(new File(ProjectConstants.A2_B1_CSV_FILE_PATH));
-        service.addAll(terms);
+        Set<String> existingWords = service.getAll().stream()
+                .parallel()
+                .map(Term::getWord)
+                .collect(Collectors.toSet());
+        List<Term> missingTerms = new ArrayList<>();
+        for (Term term : parser.getTerms(new File(ProjectConstants.A2_B1_CSV_FILE_PATH))) {
+            if (existingWords.add(term.getWord())) {
+                missingTerms.add(term);
+            }
+        }
+        if (!missingTerms.isEmpty()) {
+            service.addAll(missingTerms);
+        }
     }
 }
