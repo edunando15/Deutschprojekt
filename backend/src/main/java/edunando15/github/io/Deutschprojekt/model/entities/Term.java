@@ -66,8 +66,8 @@ public class Term {
         }
         Term term = (Term) o;
         return this.article.equals(term.article) &&
-                this.word.equals(term.word.trim()) &&
-                this.plural.equals(term.plural.trim());
+                this.word.equalsIgnoreCase(term.word.trim()) &&
+                this.plural.equalsIgnoreCase(term.plural.trim());
     }
 
     public Article getArticle() {
