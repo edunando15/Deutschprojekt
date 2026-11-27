@@ -5,7 +5,7 @@
       <h1>Build your German vocabulary.</h1>
       <p class="intro">
         Translate 30 English prompts into German. Choose the article, then write the word and its
-        plural. Your score comes at the end.
+        plural. You can skip any word. Your score comes at the end.
       </p>
       <div class="quiz-facts">
         <span><strong>30</strong> words</span>
@@ -31,13 +31,20 @@
       <p class="hint">What is this in German?</p>
 
       <form (ngSubmit)="advance()">
-        <label for="article">Article</label>
-        <select id="article" name="article" [(ngModel)]="currentAnswer.article" required>
-          <option value="" disabled>Select an article</option>
-          <option value="Der">der</option>
-          <option value="Die">die</option>
-          <option value="Das">das</option>
-        </select>
+        <fieldset class="article-options">
+          <legend>Article</legend>
+          @for (article of articles; track article) {
+            <button
+              class="article-button"
+              [class.selected]="currentAnswer.article === article"
+              type="button"
+              [attr.aria-pressed]="currentAnswer.article === article"
+              (click)="selectArticle(article)"
+            >
+              {{ article.toLowerCase() }}
+            </button>
+          }
+        </fieldset>
 
         <label for="word">German word</label>
         <input
@@ -46,7 +53,6 @@
           [(ngModel)]="currentAnswer.word"
           autocomplete="off"
           placeholder="Write the singular"
-          required
         />
 
         <label for="plural">Plural</label>
@@ -56,7 +62,6 @@
           [(ngModel)]="currentAnswer.plural"
           autocomplete="off"
           placeholder="Write the plural"
-          required
         />
 
         <div class="question-actions">
@@ -68,7 +73,7 @@
           >
             Previous
           </button>
-          <button class="primary-button" type="submit" [disabled]="!canAdvance">
+          <button class="primary-button" type="submit">
             {{ currentIndex === questions.length - 1 ? 'Finish quiz' : 'Next word' }}
           </button>
         </div>
@@ -88,10 +93,14 @@
             <div class="result-number">{{ index + 1 }}</div>
             <div class="result-copy">
               <strong>{{ answer.englishTranslation }}</strong>
-              <span>
-                {{ answers[index].article.toLowerCase() }}
-                {{ answers[index].word }} · {{ answers[index].plural }}
-              </span>
+              @if (isSkipped(answers[index])) {
+                <span>Skipped</span>
+              } @else {
+                <span>
+                  {{ answers[index].article.toLowerCase() }}
+                  {{ answers[index].word }} · {{ answers[index].plural }}
+                </span>
+              }
               @if (!answer.correct) {
                 <small>
                   Correct: {{ answer.correctArticle.toLowerCase() }} {{ answer.correctWord }} ·

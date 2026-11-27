@@ -1,7 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import { finalize } from 'rxjs';
 import { AuthService } from '../core/auth.service';
 
 @Component({
@@ -18,6 +19,7 @@ export class RegisterComponent {
   protected errorMessage = '';
   protected isSubmitting = false;
 
+  private readonly changeDetectorRef = inject(ChangeDetectorRef);
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
 
@@ -35,6 +37,12 @@ export class RegisterComponent {
         email: this.email.trim(),
         password: this.password,
       })
+      .pipe(
+        finalize(() => {
+          this.isSubmitting = false;
+          this.changeDetectorRef.markForCheck();
+        }),
+      )
       .subscribe({
         next: () => void this.router.navigate(['/login'], { queryParams: { registered: 'true' } }),
         error: (error: unknown) => {
@@ -48,7 +56,7 @@ export class RegisterComponent {
               : error instanceof HttpErrorResponse && error.status === 400
                 ? backendMessage || 'Please check your details and try again.'
                 : 'Could not create your account. Please check your connection and try again.';
-          this.isSubmitting = false;
+          this.changeDetectorRef.markForCheck();
         },
       });
   }

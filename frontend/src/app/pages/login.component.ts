@@ -1,5 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { AuthService } from '../core/auth.service';
@@ -17,6 +17,7 @@ export class LoginComponent {
   protected isSubmitting = false;
   protected readonly registered = inject(ActivatedRoute).snapshot.queryParamMap.has('registered');
 
+  private readonly changeDetectorRef = inject(ChangeDetectorRef);
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
 
@@ -31,6 +32,7 @@ export class LoginComponent {
             ? 'That username and password do not match.'
             : 'Could not sign in. Please check your connection and try again.';
         this.isSubmitting = false;
+        this.changeDetectorRef.markForCheck();
       },
     });
   }

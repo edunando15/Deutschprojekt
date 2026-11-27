@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, timeout } from 'rxjs';
 import { QuizAnswer, QuizQuestion, QuizResult } from './api.models';
 import { API_URL } from './api-url';
 
@@ -9,10 +9,14 @@ export class QuizService {
   private readonly http = inject(HttpClient);
 
   startQuiz(): Observable<QuizQuestion[]> {
-    return this.http.get<QuizQuestion[]>(`${API_URL}/terms/quiz`);
+    return this.http
+      .get<QuizQuestion[]>(`${API_URL}/terms/quiz`)
+      .pipe(timeout({ first: 15_000 }));
   }
 
   submitQuiz(answers: QuizAnswer[]): Observable<QuizResult> {
-    return this.http.post<QuizResult>(`${API_URL}/terms/quiz/submit`, answers);
+    return this.http
+      .post<QuizResult>(`${API_URL}/terms/quiz/submit`, answers)
+      .pipe(timeout({ first: 15_000 }));
   }
 }
