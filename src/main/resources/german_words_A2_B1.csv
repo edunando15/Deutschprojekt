@@ -102,3 +102,411 @@ Der,Chef,Boss,Chefs
 Die,Arbeit,Work,Arbeiten
 Der,Kollege,Colleague (male),Kollegen
 Die,Kollegin,Colleague (female),Kolleginnen
+Der,Mann,Man,Männer
+Die,Frau,Woman,Frauen
+Das,Mädchen,Girl,Mädchen
+Der,Junge,Boy,Jungen
+Der,Sohn,Son,Söhne
+Die,Tochter,Daughter,Töchter
+Der,Großvater,Grandfather,Großväter
+Die,Großmutter,Grandmother,Großmütter
+Der,Onkel,Uncle,Onkel
+Die,Tante,Aunt,Tanten
+Der,Cousin,Cousin (male),Cousins
+Die,Cousine,Cousin (female),Cousinen
+Der,Mensch,Human/Person,Menschen
+Die,Person,Person,Personen
+Der,Name,Name,Namen
+Der,Kopf,Head,Köpfe
+Das,Auge,Eye,Augen
+Das,Ohr,Ear,Ohren
+Die,Nase,Nose,Nasen
+Der,Mund,Mouth,Münder
+Der,Zahn,Tooth,Zähne
+Das,Haar,Hair,Haare
+Das,Gesicht,Face,Gesichter
+Der,Hals,Neck,Hälse
+Die,Schulter,Shoulder,Schultern
+Der,Arm,Arm,Arme
+Die,Hand,Hand,Hände
+Der,Finger,Finger,Finger
+Der,Rücken,Back,Rücken
+Das,Herz,Heart,Herzen
+Der,Bauch,Stomach,Bäuche
+Das,Bein,Leg,Beine
+Der,Fuß,Foot,Füße
+Die,Haut,Skin,Häute
+Das,Blut,Blood,-
+Die,Gesundheit,Health,-
+Die,Krankheit,Illness,Krankheiten
+Der,Schmerz,Pain,Schmerzen
+Das,Medikament,Medication,Medikamente
+Die,Apotheke,Pharmacy,Apotheken
+Der,Patient,Patient (male),Patienten
+Die,Patientin,Patient (female),Patientinnen
+Das,Essen,Food,Essen
+Das,Frühstück,Breakfast,Frühstücke
+Das,Mittagessen,Lunch,Mittagessen
+Das,Abendessen,Dinner,Abendessen
+Der,Hunger,Hunger,-
+Der,Durst,Thirst,-
+Der,Geschmack,Taste,Geschmäcker
+Das,Salz,Salt,Salze
+Der,Zucker,Sugar,Zucker
+Der,Pfeffer,Pepper,Pfeffer
+Das,Öl,Oil,Öle
+Die,Butter,Butter,-
+Der,Käse,Cheese,Käse
+Das,Ei,Egg,Eier
+Das,Fleisch,Meat,-
+Das,Huhn,Chicken,Hühner
+Das,Schwein,Pig,Schweine
+Die,Kuh,Cow,Kühe
+Das,Pferd,Horse,Pferde
+Das,Schaf,Sheep,Schafe
+Die,Ziege,Goat,Ziegen
+Die,Maus,Mouse,Mäuse
+Der,Bär,Bear,Bären
+Der,Wolf,Wolf,Wölfe
+Der,Fuchs,Fox,Füchse
+Der,Löwe,Lion,Löwen
+Der,Elefant,Elephant,Elefanten
+Der,Affe,Monkey,Affen
+Die,Biene,Bee,Bienen
+Der,Schmetterling,Butterfly,Schmetterlinge
+Der,Käfer,Beetle,Käfer
+Die,Spinne,Spider,Spinnen
+Die,Schlange,Snake,Schlangen
+Der,Frosch,Frog,Frösche
+Die,Ente,Duck,Enten
+Die,Gans,Goose,Gänse
+Die,Pflanze,Plant,Pflanzen
+Das,Gras,Grass,Gräser
+Das,Blatt,Leaf,Blätter
+Die,Wurzel,Root,Wurzeln
+Der,Ast,Branch,Äste
+Der,Stein,Stone,Steine
+Der,Sand,Sand,Sande
+Die,Erde,Earth/Soil,Erden
+Das,Feuer,Fire,Feuer
+Die,Luft,Air,-
+Der,Himmel,Sky,Himmel
+Der,Stern,Star,Sterne
+Der,Sturm,Storm,Stürme
+Der,Blitz,Lightning,Blitze
+Der,Donner,Thunder,Donner
+Der,Nebel,Fog,Nebel
+Das,Eis,Ice,-
+Die,Temperatur,Temperature,Temperaturen
+Die,Hitze,Heat,-
+Die,Kälte,Cold,-
+Die,Welt,World,Welten
+Die,Natur,Nature,Naturen
+Die,Umwelt,Environment,Umwelten
+Das,Klima,Climate,Klimata
+Der,Kontinent,Continent,Kontinente
+Die,Region,Region,Regionen
+Die,Grenze,Border,Grenzen
+Die,Hauptstadt,Capital city,Hauptstädte
+Der,Platz,Square/Place,Plätze
+Der,Park,Park,Parks
+Der,Garten,Garden,Gärten
+Der,Hof,Courtyard/Farmyard,Höfe
+Der,Bauernhof,Farm,Bauernhöfe
+Die,Brücke,Bridge,Brücken
+Der,Turm,Tower,Türme
+Die,Kirche,Church,Kirchen
+Das,Museum,Museum,Museen
+Das,Theater,Theater,Theater
+Das,Kino,Cinema,Kinos
+Das,Restaurant,Restaurant,Restaurants
+Das,Café,Café,Cafés
+Das,Hotel,Hotel,Hotels
+Der,Bahnhof,Train station,Bahnhöfe
+Der,Flughafen,Airport,Flughäfen
+Die,Haltestelle,Stop,Haltestellen
+Der,Weg,Path/Way,Wege
+Die,Ecke,Corner,Ecken
+Die,Seite,Side/Page,Seiten
+Die,Mitte,Middle,Mitten
+Das,Zentrum,Center,Zentren
+Der,Norden,North,-
+Der,Süden,South,-
+Der,Osten,East,-
+Der,Westen,West,-
+Der,Zug,Train,Züge
+Der,Bus,Bus,Busse
+Die,Straßenbahn,Tram,Straßenbahnen
+Die,U-Bahn,Subway/Underground,U-Bahnen
+Das,Fahrrad,Bicycle,Fahrräder
+Das,Motorrad,Motorcycle,Motorräder
+Das,Flugzeug,Airplane,Flugzeuge
+Das,Schiff,Ship,Schiffe
+Das,Boot,Boat,Boote
+Der,Hafen,Port/Harbor,Häfen
+Die,Fahrkarte,Ticket,Fahrkarten
+Der,Fahrer,Driver (male),Fahrer
+Die,Fahrerin,Driver (female),Fahrerinnen
+Der,Reisende,Traveller (male),Reisende
+Die,Reisende,Traveller (female),Reisende
+Die,Reise,Trip/Journey,Reisen
+Der,Urlaub,Holiday/Vacation,Urlaube
+Die,Ferien,School holidays,-
+Der,Koffer,Suitcase,Koffer
+Die,Tasche,Bag,Taschen
+Der,Rucksack,Rucksack,Rucksäcke
+Der,Schlüssel,Key,Schlüssel
+Das,Schloss,Lock/Castle,Schlösser
+Die,Uhr,Clock/Watch,Uhren
+Die,Brille,Glasses,Brillen
+Der,Hut,Hat,Hüte
+Der,Mantel,Coat,Mäntel
+Die,Jacke,Jacket,Jacken
+Der,Pullover,Pullover/Sweater,Pullover
+Das,Hemd,Shirt,Hemden
+Das,T-Shirt,T-shirt,T-shirts
+Die,Hose,Trousers,Hosen
+Das,Kleid,Dress,Kleider
+Der,Rock,Skirt,Röcke
+Der,Schuh,Shoe,Schuhe
+Die,Socke,Sock,Socken
+Der,Gürtel,Belt,Gürtel
+Der,Handschuh,Glove,Handschuhe
+Der,Schal,Scarf,Schals
+Die,Kleidung,Clothing,-
+Der,Stoff,Fabric/Material,Stoffe
+Die,Farbe,Colour,Farben
+Das,Rot,Red,-
+Das,Blau,Blue,-
+Das,Grün,Green,-
+Das,Gelb,Yellow,-
+Das,Schwarz,Black,-
+Das,Weiß,White,-
+Das,Grau,Grey,-
+Das,Braun,Brown,-
+Das,Orange,Orange,-
+Das,Lila,Purple,-
+Das,Pink,Pink,-
+Das,Gold,Gold,-
+Das,Silber,Silver,-
+Das,Papier,Paper,Papiere
+Der,Stift,Pen/Pencil,Stifte
+Der,Kugelschreiber,Ballpoint pen,Kugelschreiber
+Der,Bleistift,Pencil,Bleistifte
+Das,Lineal,Ruler,Lineale
+Die,Schere,Scissors,Scheren
+Das,Heft,Exercise book,Hefte
+Der,Ordner,Folder,Ordner
+Der,Tischler,Carpenter (male),Tischler
+Der,Bäcker,Baker (male),Bäcker
+Die,Bäckerin,Baker (female),Bäckerinnen
+Der,Koch,Cook (male),Köche
+Die,Köchin,Cook (female),Köchinnen
+Der,Kellner,Waiter,Kellner
+Die,Kellnerin,Waitress,Kellnerinnen
+Der,Polizist,Police officer (male),Polizisten
+Die,Polizistin,Police officer (female),Polizistinnen
+Der,Feuerwehrmann,Firefighter (male),Feuerwehrmänner
+Der,Ingenieur,Engineer (male),Ingenieure
+Die,Ingenieurin,Engineer (female),Ingenieurinnen
+Der,Anwalt,Lawyer (male),Anwälte
+Die,Anwältin,Lawyer (female),Anwältinnen
+Der,Verkäufer,Salesperson (male),Verkäufer
+Die,Verkäuferin,Salesperson (female),Verkäuferinnen
+Der,Kunde,Customer (male),Kunden
+Die,Kundin,Customer (female),Kundinnen
+Der,Gast,Guest,Gäste
+Die,Aufgabe,Task/Assignment,Aufgaben
+Die,Frage,Question,Fragen
+Die,Antwort,Answer,Antworten
+Der,Fehler,Mistake,Fehler
+Die,Lösung,Solution,Lösungen
+Der,Grund,Reason,Gründe
+Das,Ergebnis,Result,Ergebnisse
+Der,Erfolg,Success,Erfolge
+Der,Versuch,Attempt,Versuche
+Die,Hilfe,Help,-
+Die,Information,Information,Informationen
+Die,Nachricht,Message/News,Nachrichten
+Der,Brief,Letter,Briefe
+Die,E-Mail,Email,E-Mails
+Die,Post,Mail/Post office,-
+Das,Paket,Parcel,Pakete
+Die,Zeitung,Newspaper,Zeitungen
+Die,Zeitschrift,Magazine,Zeitschriften
+Das,Radio,Radio,Radios
+Das,Fernsehen,Television,-
+Der,Fernseher,Television set,Fernseher
+Das,Netz,Net/Network,Netze
+Das,Internet,Internet,-
+Die,Seite,Website/Page,Seiten
+Das,Passwort,Password,Passwörter
+Die,Datei,File,Dateien
+Der,Ordner,Directory/Folder,Ordner
+Das,Programm,Programme,Programme
+Das,Spiel,Game,Spiele
+Der,Sport,Sport,Sportarten
+Der,Ball,Ball,Bälle
+Das,Tor,Goal/Gate,Tore
+Die,Mannschaft,Team,Mannschaften
+Der,Sieg,Victory,Siege
+Die,Niederlage,Defeat,Niederlagen
+Das,Training,Training,Trainings
+Die,Musik,Music,-
+Das,Lied,Song,Lieder
+Der,Ton,Sound/Tone,Töne
+Die,Stimme,Voice,Stimmen
+Das,Instrument,Instrument,Instrumente
+Die,Gitarre,Guitar,Gitarren
+Das,Klavier,Piano,Klaviere
+Die,Kunst,Art,Künste
+Der,Künstler,Artist (male),Künstler
+Die,Künstlerin,Artist (female),Künstlerinnen
+Das,Foto,Photograph,Fotos
+Die,Kamera,Camera,Kameras
+Die,Geschichte,Story/History,Geschichten
+Das,Märchen,Fairy tale,Märchen
+Das,Gedicht,Poem,Gedichte
+Der,Roman,Novel,Romane
+Der,Autor,Author (male),Autoren
+Die,Autorin,Author (female),Autorinnen
+Der,Leser,Reader (male),Leser
+Die,Leserin,Reader (female),Leserinnen
+Die,Bibliothek,Library,Bibliotheken
+Die,Universität,University,Universitäten
+Die,Klasse,Class,Klassen
+Der,Kurs,Course,Kurse
+Die,Prüfung,Exam,Prüfungen
+Die,Note,Grade/Mark,Noten
+Das,Wissen,Knowledge,-
+Die,Erfahrung,Experience,Erfahrungen
+Die,Fähigkeit,Ability,Fähigkeiten
+Die,Meinung,Opinion,Meinungen
+Der,Wunsch,Wish,Wünsche
+Die,Hoffnung,Hope,Hoffnungen
+Die,Angst,Fear,Ängste
+Die,Freude,Joy,Freuden
+Die,Liebe,Love,-
+Der,Hass,Hatred,-
+Der,Frieden,Peace,-
+Der,Krieg,War,Kriege
+Das,Gesetz,Law,Gesetze
+Das,Recht,Right/Law,Rechte
+Der,Staat,State,Staaten
+Die,Regierung,Government,Regierungen
+Die,Wahl,Election,Wahlen
+Die,Gesellschaft,Society,Gesellschaften
+Die,Kultur,Culture,Kulturen
+Die,Religion,Religion,Religionen
+Der,Glaube,Faith/Belief,Glauben
+Das,Fest,Festival/Party,Feste
+Die,Feier,Celebration,Feiern
+Der,Geburtstag,Birthday,Geburtstage
+Das,Geschenk,Present/Gift,Geschenke
+Die,Einladung,Invitation,Einladungen
+Der,Besuch,Visit,Besuche
+Die,Gruppe,Group,Gruppen
+Der,Teil,Part,Teile
+Das,Stück,Piece,Stücke
+Die,Art,Kind/Type,Arten
+Die,Weise,Manner/Way,Weisen
+Der,Anfang,Beginning,Anfänge
+Das,Ende,End,Enden
+Die,Anfangszeit,Start time,Anfangszeiten
+Die,Dauer,Duration,Dauern
+Die,Zukunft,Future,-
+Die,Vergangenheit,Past,-
+Die,Gegenwart,Present,-
+Der,Augenblick,Moment,Augenblicke
+Der,Moment,Moment,Momente
+Der,Montag,Monday,Montage
+Der,Dienstag,Tuesday,Dienstage
+Der,Mittwoch,Wednesday,Mittwoche
+Der,Donnerstag,Thursday,Donnerstage
+Der,Freitag,Friday,Freitage
+Der,Samstag,Saturday,Samstage
+Der,Sonntag,Sunday,Sonntage
+Der,Januar,January,Januare
+Der,Februar,February,Februare
+Der,März,March,Märze
+Der,April,April,Aprile
+Der,Mai,May,Maie
+Der,Juni,June,Junis
+Der,Juli,July,Julis
+Der,August,August,Auguste
+Der,September,September,September
+Der,Oktober,October,Oktober
+Der,November,November,November
+Der,Dezember,December,Dezember
+Der,Preis,Price,Preise
+Der,Euro,Euro,Euros
+Der,Cent,Cent,Cents
+Der,Franken,Franc,Franken
+Die,Rechnung,Bill/Invoice,Rechnungen
+Die,Quittung,Receipt,Quittungen
+Die,Münze,Coin,Münzen
+Der,Schein,Banknote/Bill,Scheine
+Der,Rabatt,Discount,Rabatte
+Das,Angebot,Offer,Angebote
+Die,Zahlung,Payment,Zahlungen
+Das,Konto,Account,Konten
+Der,Schuldenberg,Debt mountain,Schuldenberge
+Die,Schuld,Guilt/Debt,Schulden
+Der,Gewinn,Profit/Win,Gewinne
+Der,Verlust,Loss,Verluste
+Der,Marktplatz,Marketplace,Marktplätze
+Das,Kaufhaus,Department store,Kaufhäuser
+Die,Bäckerei,Bakery,Bäckereien
+Die,Metzgerei,Butcher's shop,Metzgereien
+Der,Supermarkt,Supermarket,Supermärkte
+Der,Kiosk,Kiosk,Kioske
+Das,Regal,Shelf,Regale
+Der,Korb,Basket,Körbe
+Der,Wagen,Cart/Car,Wagen
+Die,Flasche,Bottle,Flaschen
+Das,Glas,Glass,Gläser
+Die,Tasse,Cup,Tassen
+Der,Teller,Plate,Teller
+Die,Schüssel,Bowl,Schüsseln
+Der,Löffel,Spoon,Löffel
+Die,Gabel,Fork,Gabeln
+Das,Messer,Knife,Messer
+Die,Serviette,Napkin,Servietten
+Die,Speisekarte,Menu,Speisekarten
+Die,Suppe,Soup,Suppen
+Der,Salat,Salad,Salate
+Der,Reis,Rice,-
+Die,Nudel,Noodle,Nudeln
+Die,Kartoffel,Potato,Kartoffeln
+Die,Tomate,Tomato,Tomaten
+Die,Zwiebel,Onion,Zwiebeln
+Die,Karotte,Carrot,Karotten
+Die,Gurke,Cucumber,Gurken
+Der,Kohl,Cabbage,Kohle
+Die,Bohne,Bean,Bohnen
+Die,Erbse,Pea,Erbsen
+Das,Obst,Fruit,-
+Das,Gemüse,Vegetables,-
+Die,Birne,Pear,Birnen
+Die,Kirsche,Cherry,Kirschen
+Die,Erdbeere,Strawberry,Erdbeeren
+Die,Traube,Grape,Trauben
+Die,Orange,Orange,Orangen
+Die,Zitrone,Lemon,Zitronen
+Die,Melone,Melon,Melonen
+Die,Nuss,Nut,Nüsse
+Der,Kuchen,Cake,Kuchen
+Die,Torte,Gateau/Cake,Torten
+Der,Keks,Biscuit,Kekse
+Die,Schokolade,Chocolate,Schokoladen
+Das,Bonbon,Sweet/Candy,Bonbons
+Der,Saft,Juice,Säfte
+Die,Limonade,Lemonade,Limonaden
+Das,Mineralwasser,Mineral water,Mineralwässer
+Der,Weinbrand,Brandy,Weinbrände
+Das,Schnitzel,Schnitzel,Schnitzel
+Die,Wurst,Sausage,Würste
+Der,Schinken,Ham,Schinken
+Der,Speck,Bacon,Specke
+Der,Fischmarkt,Fish market,Fischmärkte
+Die,Mahlzeit,Meal,Mahlzeiten
