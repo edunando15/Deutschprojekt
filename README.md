@@ -4,16 +4,15 @@ Deutschprojekt is a German vocabulary practice app with an Angular frontend and 
 
 ## Run locally
 
-Start PostgreSQL and configure the backend connection from the repository root in PowerShell:
+Start PostgreSQL, copy `.env.example` to `.env` in the repository root, and set `DB_USERNAME` and `DB_PASSWORD` in `.env` to your PostgreSQL credentials. Spring Boot imports this file automatically, and `.env` is ignored by Git:
 
 ```powershell
-$env:DB_URL = "jdbc:postgresql://localhost:5432/deutschprojekt"
-$env:DB_USERNAME = "deutschprojekt"
-$env:DB_PASSWORD = "<your password>"
+Copy-Item .env.example .env
+# Edit .env once with your local PostgreSQL credentials.
 .\mvnw.cmd spring-boot:run
 ```
 
-The backend runs at `http://localhost:8080` and adds vocabulary CSV entries not already stored in the database. If the frontend uses a different origin, set `FRONTEND_ORIGIN` before starting Spring Boot; the default is `http://localhost:4200`. For stable JWTs between backend restarts, set `JWT_SECRET` to a Base64-encoded key of at least 32 bytes.
+The backend runs at `http://localhost:8080` and adds vocabulary CSV entries not already stored in the database. Optional settings such as `FRONTEND_ORIGIN` and `JWT_SECRET` can also be added to `.env`. The frontend origin defaults to `http://localhost:4200`; a stable JWT secret must be a Base64-encoded key of at least 32 bytes.
 
 In another terminal:
 
@@ -45,4 +44,11 @@ Build the Angular application:
 ```powershell
 Set-Location frontend
 npm.cmd run build
+```
+
+Lint the Angular application:
+
+```powershell
+Set-Location frontend
+npm.cmd run lint
 ```
