@@ -4,15 +4,15 @@ Deutschprojekt is a German vocabulary practice app with an Angular frontend and 
 
 ## Run locally
 
-Start PostgreSQL, copy `.env.example` to `.env` in the repository root, and set `DB_USERNAME` and `DB_PASSWORD` in `.env` to your PostgreSQL credentials. Spring Boot imports this file automatically, and `.env` is ignored by Git:
+The repository is split into `backend/` (Spring Boot API) and `frontend/` (Angular app). Start PostgreSQL, then create `backend/.env` with your database settings. Spring Boot imports this file automatically, and `.env` is ignored by Git:
 
 ```powershell
-Copy-Item .env.example .env
-# Edit .env once with your local PostgreSQL credentials.
+Set-Location backend
+# Create .env with DB_URL, DB_USERNAME, and DB_PASSWORD for your PostgreSQL instance.
 .\mvnw.cmd spring-boot:run
 ```
 
-The backend runs at `http://localhost:8080` and adds vocabulary CSV entries not already stored in the database. Optional settings such as `FRONTEND_ORIGIN` and `JWT_SECRET` can also be added to `.env`. The frontend origin defaults to `http://localhost:4200`; a stable JWT secret must be a Base64-encoded key of at least 32 bytes.
+The backend runs at `http://localhost:8080` and adds vocabulary CSV entries not already stored in the database. Optional settings such as `FRONTEND_ORIGIN` and `JWT_SECRET` can also be added to `backend/.env`. The frontend origin defaults to `http://localhost:4200`; a stable JWT secret must be a Base64-encoded key of at least 32 bytes.
 
 In another terminal:
 
@@ -33,9 +33,10 @@ Open `http://localhost:4200`, create an account, and sign in. The Angular app ca
 
 ## Tests
 
-Run the focused quiz API tests from the repository root:
+Run the focused quiz API tests:
 
 ```powershell
+Set-Location backend
 .\mvnw.cmd "-Dtest=TermsControllerTest,StartupRunnerTest" test
 ```
 
