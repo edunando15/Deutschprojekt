@@ -1,0 +1,96 @@
+:host {
+  display: block;
+  padding: 2rem 1rem 4rem;
+}
+
+.auth-card {
+  background: #fffefa;
+  border: 1px solid #e8e8de;
+  border-radius: 20px;
+  box-shadow: 0 18px 55px #18382c0d;
+  margin: 2rem auto;
+  max-width: 440px;
+  padding: 2.5rem;
+}
+
+.eyebrow {
+  color: #df7256;
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+h1 {
+  color: #173c35;
+  font-size: clamp(2rem, 8vw, 2.65rem);
+  letter-spacing: -0.06em;
+  margin: 0.5rem 0;
+}
+
+.intro,
+.switch-link {
+  color: #687670;
+  line-height: 1.6;
+}
+
+form {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1.75rem;
+}
+
+label {
+  color: #354c45;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #d7ded6;
+  border-radius: 9px;
+  font: inherit;
+  padding: 0.8rem 0.9rem;
+}
+
+input:focus {
+  border-color: #427c67;
+  outline: 3px solid #427c6726;
+}
+
+.primary-button {
+  background: #245c4b;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  margin-top: 0.9rem;
+  padding: 0.9rem;
+}
+
+.primary-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.switch-link {
+  font-size: 0.9rem;
+  margin: 1.5rem 0 0;
+  text-align: center;
+}
+
+.switch-link a {
+  color: #245c4b;
+  font-weight: 700;
+}
+
+.error {
+  background: #fff0ed;
+  border-radius: 8px;
+  color: #a53d2b;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+}

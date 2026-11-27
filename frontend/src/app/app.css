@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.page-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 1.5rem 1.25rem;
+  width: 100%;
+}
+
+.brand {
+  color: #173c35;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+}
+
+.brand span {
+  color: #df7256;
+}
+
+.sign-out {
+  background: transparent;
+  border: 0;
+  color: #52645f;
+  cursor: pointer;
+  font: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  color: #77827d;
+  font-size: 0.8rem;
+  padding: 1.5rem;
+  text-align: center;
+}

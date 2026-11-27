@@ -41,7 +41,7 @@ public class TermsController {
                 .collect(Collectors.toMap(
                         Term::getWord,
                         Function.identity(),
-                        (first, duplicate) -> first,
+                        (first, _) -> first,
                         LinkedHashMap::new));
         List<Term> terms = new ArrayList<>(uniqueTerms.values());
         if (terms.size() < QUIZ_SIZE) {

@@ -1,0 +1,12 @@
+<div class="page-shell">
+  <header class="site-header">
+    <a class="brand" routerLink="/">Wortweise<span>.</span></a>
+    @if (auth.isAuthenticated()) {
+      <button class="sign-out" type="button" (click)="signOut()">Sign out</button>
+    }
+  </header>
+  <main>
+    <router-outlet />
+  </main>
+  <footer>Small steps, strong German.</footer>
+</div>
