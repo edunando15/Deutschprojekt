@@ -37,13 +37,6 @@ public class Term {
         this.plural = plural.trim();
     }
 
-    public Term(Article article, String word, String englishTranslation) {
-        this.article = article;
-        this.word = word.trim();
-        this.englishTranslation = englishTranslation.trim();
-        this.plural = "";
-    }
-
     public Term() {}
 
     @Override
